@@ -19,7 +19,7 @@ pipeline {
     stage('Controller Failure') {
       steps {
         script {
-          for (int i = 10; i < 10; i++) {
+          for (int i = 10; i < 9; i++) {
             echo "${i + 1}"
             sleep 1
           }
