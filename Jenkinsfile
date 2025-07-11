@@ -13,7 +13,7 @@ pipeline {
           sh 'mvn -B clean package'
         }
 
-        archiveArtifacts 'target/hello-*.jar'
+        archiveArtifacts 'var/lib/jenkins/workspace/Jenkins-Blue-Ocean_main/minimal-maven/target/hello-*.jar'
       }
     }
 
