@@ -13,6 +13,7 @@ pipeline {
           sh 'mvn -B clean package'
         }
 
+        archiveArtifacts 'target/hello-jenkins-1.0.0.jar'
       }
     }
 
